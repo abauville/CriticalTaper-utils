@@ -120,11 +120,7 @@ class Taper():
         
         alpha_max = np.arctan((1.0-Lambda_ov)*mu)        
         
-        alpha_list = [alpha_m,alpha_max,-alpha_m,-alpha_max,alpha_m]
-        fac_psi_b = [-1.0,-1.0, 1.0, 1.0]
-        fac_psi_0 = [-1.0, 1.0,-1.0, 1.0]
-        fac_psi_b_pi = [0.5,0.5,1.0,0.0]
-        fac_psi_0_pi = [0.5,0.0,0.5,0.0]
+        alpha_list = [alpha_m,alpha_max-1e-10,-alpha_m,-alpha_max+1e-10,alpha_m]
         
         
         
@@ -175,6 +171,7 @@ class Taper():
         
             beta =  psi_b-psi_0-alpha
             beta[beta<-pi/2.0] += pi
+            print(beta)
             
             if (i==0):
                 self.psi_bmax = psi_b
