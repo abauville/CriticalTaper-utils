@@ -170,7 +170,7 @@ class Taper():
             else:        psi_b = 0.5*(+theta - phi_b_p)         # psi_0 = psi_b_3
         
             beta =  psi_b-psi_0-alpha
-            beta[beta<-pi/2.0] += pi
+            beta[beta<-pi/4.0] += pi
             print(beta)
             
             if (i==0):
