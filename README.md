@@ -6,9 +6,5 @@ Please cite this repository and the original paper:
 Journal of Geophysical Research: Solid Earth, 89(B12):10125–10133.
 2. Lehner, F. K. (1986). Comments on "Noncohesive critical Coulomb wedges: an exact
 solution" by F. A Dahlen. 	Journal of Geophysical Research, 91(B1):793-796
-3. this paper 
-4. Arthur Bauville. (2019, June 21). CriticalTaper-utils (Version v1.0.1). 
+3. Arthur Bauville. (2019, June 21). CriticalTaper-utils (Version v1.0.1). 
 Zenodo. http://doi.org/10.5281/zenodo.3251524
-
-Cite as:
-abauville. (2019, June 21). abauville/CriticalTaper-utils 1.0.1 (Version 1.0.1). Zenodo. http://doi.org/10.5281/zenodo.3251524
