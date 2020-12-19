@@ -8,3 +8,19 @@ Journal of Geophysical Research: Solid Earth, 89(B12):10125–10133.
 solution" by F. A Dahlen. 	Journal of Geophysical Research, 91(B1):793-796
 3. Arthur Bauville. (2019, June 21). CriticalTaper-utils (Version v1.0.1). 
 Zenodo. http://doi.org/10.5281/zenodo.3251524
+
+# Content
+
+`basic_script.ipynb` - notebook to compute the critical taper solution and visualize the $\alpha$ (surface angle) vs $\beta$ (basal angle) plot.
+`Critical_taper_utils.py` - definition of class Taper().
+
+     import numpy as np
+     import matplotlib as plt
+     deg = np.pi/180.0
+     my_taper = Taper(phi=30.0*deg, phi_b=10.0,
+                      Lambda=0.0, Lambda_b=0.0,
+                      rho=2500.0, rho_w=1000.0)
+     my_taper.computeAlphaVsBeta()
+     plt.plot(my_taper.beta_all, my_taper.alpha_all)
+     
+      
